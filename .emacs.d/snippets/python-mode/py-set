@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: pyset
+# key: pyset
+# --
+import pandas as pd
+import numpy as np
+import os
+import sys
+from time import time
+from copy import deepcopy
+import toolz
+from collections import deque, OrderedDict
+
+from remedyconfigs import load_configs
+config = load_configs()
+
+pd.options.mode.chained_assignment = None

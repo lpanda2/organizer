@@ -1,0 +1,11 @@
+# key: configs
+# name: configs
+# --
+
+from remedyconfigs import load_configs
+
+config = load_configs()
+M = config.get('drives', 'm')
+Q = config.get('drives', 'q')
+E = config.get('drives', 'e')
+S = os.path.join(config.get('drives', 'q'), config.get('paths', 'scraps'))
