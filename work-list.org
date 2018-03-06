@@ -1,0 +1,286 @@
+#+SEQ_TODO: NOW(N) NEXT(n) TODO(t) WAITING(w) SOMEDAY(s) ONGOING(o) | DONE(d) CANCELLED(c)
+
+* Extra
+** DONE Figuring out how to work my computer
+   CLOSED: [2018-02-07 Wed 17:02]
+   CLOCK: [2018-01-27 Sat 17:29]--[2018-01-27 Sat 17:29] =>  0:00
+   CLOCK: [2018-01-27 Sat 17:21]--[2018-01-27 Sat 17:28] =>  0:07
+** DONE Instructions for Sam/ Mina
+   CLOSED: [2018-02-07 Wed 17:02]
+   CLOCK: [2018-01-27 Sat 17:50]--[2018-01-27 Sat 17:57] =>  0:07
+
+** DONE Header Line
+   CLOSED: [2018-02-07 Wed 17:02]
+   CLOCK: [2018-02-01 Thu 18:10]--[2018-02-01 Thu 19:11] =>  1:01
+   CLOCK: [2018-02-01 Thu 15:58]--[2018-02-01 Thu 17:24] =>  1:26
+
+** TODO Email Lesli
+   CLOCK: [2018-02-18 Sun 21:30]--[2018-02-18 Sun 22:10] =>  0:40
+   CLOCK: [2018-02-18 Sun 00:00]--[2018-02-18 Sun 00:31] =>  0:31
+* ONGOING Java Engine
+** ONGOING Presentations
+*** DONE Load Testing Follow Up Presentation
+    CLOSED: [2018-03-06 Tue 09:34]
+   CLOCK: [2018-02-01 Thu 21:11]--[2018-02-01 Thu 22:12] =>  1:01
+
+*** TODO Pre-Bundling Presentation Tech Team
+
+** SOMEDAY Learning
+*** SQS Amazon AWS
+    CLOCK: [2018-02-17 Sat 21:51]--[2018-02-17 Sat 22:32] =>  0:41
+    CLOCK: [2018-02-17 Sat 21:21]--[2018-02-17 Sat 21:50] =>  0:29
+
+* ONGOING Tech Team Things
+** DONE Add ticket for Farm Env Updates
+   CLOSED: [2018-02-14 Wed 04:50]
+   CLOCK: [2018-02-13 Tue 20:44]--[2018-02-13 Tue 21:00] =>  0:16
+   CLOCK: [2018-02-13 Tue 20:35]--[2018-02-13 Tue 20:43] =>  0:08
+** TODO Add ticket for 3 types of instance on Farm
+** TODO Add ticket for to pipeline the bundle definitions
+
+## Sample Code
+
+def use_copies(func):
+    """ Wrapper that uses copies instead of the original input."""
+    def wrapper(*args, **kwargs):
+        args = [deepcopy(x) for x in args]
+        kwargs = dict((k, deepcopy(v)) for k, v in kwargs.items())
+        return func(*args, **kwargs)
+    return wrapper
+##
+* NEXT Prometheus
+** Spinal Fusion
+*** DONE Added Lumbar Spine Fusion Definition
+   CLOSED: [2018-01-27 Sat 18:05]
+   CLOCK: [2018-01-27 Sat 10:04]--[2018-01-27 Sat 12:05] =>  2:01
+   CLOCK: [2018-01-26 Fri 7:04]--[2018-01-26 Fri 10:30] =>  3:26
+   CLOCK: [2018-01-25 Thu 11:03]--[2018-01-25 Thu 18:03] =>  7:00
+   CLOCK: [2018-01-24 Wed 14:02]--[2018-01-24 Wed 18:02] =>  4:00
+   CLOCK: [2018-01-23 Tue 18:01]--[2018-01-23 Tue 24:02] =>  6:01
+   CLOCK: [2018-01-21 Sun 8:14]--[2018-01-21 Sun 12:14] =>  4:00
+*** DONE Create Lumbar Spine Fusion from Lumbar Laminectomy
+   CLOSED: [2018-02-07 Wed 17:13]
+   CLOCK: [2018-02-04 Sun 21:33]--[2018-02-04 Sun 23:19] =>  1:46
+** Additional Prometheus Rules & Cleaning
+*** DONE Investigate for which defs Prometheus needs the extendLookForward
+   CLOSED: [2018-01-27 Sat 17:39]
+   CLOCK: [2018-01-27 Sat 17:35]--[2018-01-27 Sat 17:39] =>  0:04
+*** DONE Add extendlookforward
+   CLOSED: [2018-01-27 Sat 18:00]
+   CLOCK: [2018-01-27 Sat 17:57]--[2018-01-27 Sat 18:00] =>  0:03
+   CLOCK: [2018-01-27 Sat 17:30]--[2018-01-27 Sat 17:34] =>  0:04
+   CLOCK: [2018-01-27 Sat 17:29]--[2018-01-27 Sat 17:30] =>  0:01
+   CLOCK: [2018-01-27 Sat 17:19]--[2018-01-27 Sat 17:21] =>  0:02
+*** DONE Add isSufficient Enablers
+   CLOSED: [2018-01-27 Sat 18:27]
+   CLOCK: [2018-01-27 Sat 18:09]--[2018-01-27 Sat 18:27] =>  0:18
+*** DONE Add include all claim lines
+   CLOSED: [2018-01-27 Sat 18:33]
+   CLOCK: [2018-01-27 Sat 18:28]--[2018-01-27 Sat 18:33] =>  0:05
+*** DONE Clean the chronic bundles
+   CLOSED: [2018-01-28 Sun 02:58]
+   CLOCK: [2018-01-28 Sun 01:24]--[2018-01-28 Sun 02:58] =>  1:34
+   CLOCK: [2018-01-27 Sat 23:44]--[2018-01-28 Sun 00:48] =>  1:04
+   CLOCK: [2018-01-27 Sat 22:10]--[2018-01-27 Sat 23:37] =>  1:27
+   CLOCK: [2018-01-27 Sat 21:30]--[2018-01-27 Sat 21:52] =>  0:22
+*** DONE Delete the codes from the Vag Delivery bundle
+   CLOSED: [2018-01-31 Wed 13:48]
+   CLOCK: [2018-01-31 Wed 13:30]--[2018-01-31 Wed 13:38] =>  0:08
+*** QA
+   CLOCK: [2018-01-30 Tue 13:01]--[2018-01-30 Tue 13:10] =>  0:09
+** Technical
+*** DONE Figure out how to set up local Java Engine
+   CLOSED: [2018-01-31 Wed 13:13]
+   CLOCK: [2018-01-27 Sat 21:28]--[2018-01-27 Sat 21:30] =>  0:02
+*** DONE Generate deidentified payloads to keep on local machine
+   CLOSED: [2018-02-01 Thu 17:24]
+   CLOCK: [2018-02-01 Thu 15:55]--[2018-02-01 Thu 15:57] =>  0:02
+   CLOCK: [2018-01-31 Wed 14:13]--[2018-01-31 Wed 15:00] =>  0:47
+   CLOCK: [2018-01-31 Wed 13:12]--[2018-01-31 Wed 13:47] =>  0:35
+   CLOCK: [2018-01-31 Wed 01:04]--[2018-01-31 Wed 2:10] =>  1:06
+   CLOCK: [2018-01-30 Tue 21:30]--[2018-01-31 Wed 00:00] =>  2:30
+*** DONE Test the bundles with the Java Engine
+    CLOSED: [2018-02-24 Sat 14:53]
+   CLOCK: [2018-02-08 Thu 00:22]--[2018-02-08 Thu 00:23] =>  0:01
+   CLOCK: [2018-02-02 Fri 02:20A]--[2018-02-02 Fri 04:15] =>  1:55
+   CLOCK: [2018-02-01 Thu 17:24]--[2018-02-01 Thu 18:10] =>  0:46
+
+** Bug Fixes Feb 15-20
+ + Need to update the bundle definitions
+*** DONE Fix Spinal Fusion Definition Bug, no primaryandsecondaryoverlap
+   CLOSED: [2018-02-20 Tue 18:05]
+   CLOCK: [2018-02-20 Tue 17:43]--[2018-02-20 Tue 18:00] =>  0:17
+   CLOCK: [2018-02-20 Tue 14:27]--[2018-02-20 Tue 14:30] =>  0:03
+
+*** DONE Replace the v codes with V in diabetes
+   CLOSED: [2018-02-20 Tue 18:05]
+   CLOCK: [2018-02-20 Tue 18:00]--[2018-02-20 Tue 18:04] =>  0:04
+*** DONE Split out the chronic definitions by secondary trigger
+   CLOSED: [2018-02-20 Tue 20:37]
+   CLOCK: [2018-02-20 Tue 18:05]--[2018-02-20 Tue 20:00] =>  1:55
+*** DONE Update the newborn definition with additional codes
+   CLOSED: [2018-02-21 Wed 03:11]
+   CLOCK: [2018-02-20 Tue 21:00]--[2018-02-21 Wed 00:11] =>  3:11
+   CLOCK: [2018-02-20 Tue 20:36]--[2018-02-20 Tue 21:53] =>  1:17
+*** DONE Put definitions in a file
+   CLOSED: [2018-02-21 Wed 03:52]
+   CLOCK: [2018-02-21 Wed 02:50]--[2018-02-21 Wed 03:51] =>  1:01
+*** DONE Add the definitions to a Java Engine
+    CLOSED: [2018-02-24 Sat 14:53]
+
+** NEXT Update To Latest Version V.4.005
+* SOMEDAY Metrics Engine
+** Teaching
+*** DONE Helped Andrew with Get Metrics Explanation
+   CLOSED: [2018-01-27 Sat 17:18]
+   CLOCK: [2018-01-23 Tue 07:15]--[2018-01-23 Tue 9:15] =>  2:00
+*** DONE Pull down commits and read them
+   CLOSED: [2018-01-28 Sun 14:13]
+   CLOCK: [2018-01-28 Sun 14:00]--[2018-01-28 Sun 14:13] =>  0:13
+** Looking up things
+   CLOCK: [2018-02-22 Thu 15:53]--[2018-02-24 Sat 15:19] => 47:26
+** Schema Validation
+*** DONE Create a new feature branch for schema validation
+   CLOSED: [2018-01-31 Wed 13:11]
+   CLOCK: [2018-01-30 Tue 3:11]--[2018-01-30 Tue 4:11] =>  1:00
+   CLOCK: [2018-01-29 Mon 11:00]--[2018-01-29 Mon 12:00] =>  1:00
+
+- Struggle with magit and fixing the fact that i didn't have a local branch
+
+*** DONE Research and Learn about Parquet
+   CLOSED: [2018-02-03 Sat 19:53]
+   CLOCK: [2018-02-01 Thu 19:54]--[2018-02-01 Thu 21:54] =>  2:00
+   CLOCK: [2018-02-02 Fri 13:51]--[2018-02-02 Fri 14:00] =>  0:09
+   CLOCK: [2018-01-28 Sun 17:13]--[2018-01-28 Sun 17:14] =>  0:01
+- Trying to benchmark reading parquet versus reading messagepacks etc
+- Created a benchmarking ipython notebook
+- Creating test datasets
+   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 16:27] =>  2:13
+
+*** DONE Update the schema validation script
+    CLOSED: [2018-02-28 Wed 13:01]
+    CLOCK: [2018-02-27 Tue 20:26]--[2018-02-27 Tue 26:00] =>  5:34
+    CLOCK: [2018-02-27 Tue 17:09]--[2018-02-27 Tue 18:20] =>  1:11
+    + Logging
+    CLOCK: [2018-02-27 Tue 8:30]--[2018-02-27 Tue 10:00] =>  1:30
+    CLOCK: [2018-02-26 Mon 17:08]--[2018-02-26 Mon 20:08] =>  3:00
+    CLOCK: [2018-02-18 Sun 00:25]--[2018-02-18 Sun 01:34] =>  1:09
+    + Other Functions
+    CLOCK: [2018-02-17 Sat 22:36]--[2018-02-18 Sun 00:00] =>  1:24
+    CLOCK: [2018-02-17 Sat 20:19]--[2018-02-17 Sat 21:20] =>  1:01
+    + Functions
+   CLOCK: [2018-02-03 Sat 16:37]--[2018-02-03 Sat 19:06] =>  2:29
+   CLOCK: [2018-01-29 Mon 15:36]--[2018-01-29 Mon 16:29] =>  0:53
+   CLOCK: [2018-01-29 Mon 14:49]--[2018-01-29 Mon 15:08] =>  0:19
+   CLOCK: [2018-01-28 Sun 16:28]--[2018-01-28 Sun 16:47] =>  0:19
+
+*** DONE Make the schema configuration for Episodes
+    CLOSED: [2018-02-28 Wed 13:01]
+    CLOCK: [2018-02-17 Sat 17:46]--[2018-02-17 Sat 18:02] =>  0:16
+
+***
+** Integrate Multiprocessing
+*** TODO Add in Parquet files for Integrate Multiprocessing
+   CLOCK: [2018-02-03 Sat 19:06]--[2018-02-03 Sat 19:53] =>  0:47
+*** TODO Work on the base functions and integrating them for dataframes
+   CLOCK: [2018-01-28 Sun 16:47]--[2018-01-28 Sun 17:06] =>  0:19
+   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 14:15] =>  0:01
+*** TODO Persist Data
+
+*** TODO Add a Code Check (or determine whether it can be grouped into categorical)
+*** TODO Add a Geographic Check
+*** TODO Figure out how to return something when there's an error so we can break script.
+*** TODO Add a Unique Check
+*** TODO Add Additional Spend Metrics for COB & Capitation Amount
+
+* NOW Truven
+** DONE Internal Pre-Bundling
+   CLOSED: [2018-03-06 Tue 09:52]
+*** DONE Pre-processing script
+   CLOSED: [2018-02-19 Mon 02:56]
+   + Need to check that the adjustment claim methodology works.
+   + Need to Normalize all the claims into Parquet & CSV
+   CLOCK: [2018-02-19 Mon 02:10]--[2018-02-19 Mon 02:55] =>  0:45
+   CLOCK: [2018-02-11 Sun 22:05]--[2018-02-12 Mon 04:06] =>  6:01
+   CLOCK: [2018-02-08 Thu 05:25]--[2018-02-08 Thu 6:59] =>  1:34
+   CLOCK: [2018-02-08 Thu 00:38]--[2018-02-08 Thu 02:38] =>  2:00
+   CLOCK: [2018-01-30 Tue 13:11]--[2018-01-30 Tue 15:33] =>  2:22
+   CLOCK: [2018-01-30 Tue 12:54]--[2018-01-30 Tue 13:00] =>  0:06
+*** DONE Transform Updates
+    CLOSED: [2018-02-24 Sat 14:16]
+   + Need to check that the farm works
+    CLOCK: [2018-02-21 Wed 14:56]--[2018-02-21 Wed 14:56] =>  0:00
+   + Need to Transform all the claims into payloads using the IDs
+   CLOCK: [2018-02-18 Sun 22:18]--[2018-02-19 Mon 00:57] =>  2:39
+   + First 20% Run Transformation Script Updates
+   CLOCK: [2018-02-14 Wed 04:53]--[2018-02-14 Wed 6:38] =>  1:45
+   CLOCK: [2018-02-12 Mon 12:30]--[2018-02-12 Mon 18:30] =>  6:00
+*** DONE Bundling Updates // Json Configuration File
+    CLOSED: [2018-02-24 Sat 14:16]
+   CLOCK: [2018-02-15 Thu 01:06]--[2018-02-15 Thu 02:51] =>  1:45
+   CLOCK: [2018-02-14 Wed 20:57]--[2018-02-14 Wed 21:06] =>  0:09
+   CLOCK: [2018-02-14 Wed 13:45]--[2018-02-14 Wed 16:48] =>  3:03
+   CLOCK: [2018-02-13 Tue 17:03]--[2018-02-13 Tue 17:29] =>  0:26
+   CLOCK: [2018-02-13 Tue 12:31]--[2018-02-13 Tue 14:01] =>  1:30
+*** DONE Bundle 20% Sample
+   CLOSED: [2018-02-17 Sat 17:41]
+   CLOCK: [2018-02-15 Thu 13:52]--[2018-02-15 Thu 17:08] =>  3:16
+
+*** DONE Bundle Output QA
+   CLOSED: [2018-02-17 Sat 17:42]
+   CLOCK: [2018-02-16 Fri 12:41]--[2018-02-16 Fri 14:42] =>  2:01
+
+*** DONE New Eligbility files
+   CLOSED: [2018-02-12 Mon 06:06]
+   CLOCK: [2018-02-08 Thu 00:23]--[2018-02-08 Thu 00:38] =>  0:15
+   CLOCK: [2018-02-07 Wed 22:41]--[2018-02-08 Thu 00:21] =>  1:40
+   CLOCK: [2018-02-07 Wed 22:41]--[2018-02-07 Wed 22:41] =>  0:00
+
+** DONE External Requests
+   CLOSED: [2018-02-21 Wed 04:46]
+*** DONE Seth/HMI Team Need Truven TX Data Pre-bundled
+    CLOSED: [2018-02-20 Tue 14:24]
+    CLOCK: [2018-02-20 Tue 12:31]--[2018-02-20 Tue 14:24] =>  1:53
+- CSV Files, normalized Claims
+- # of Bins
+- # of Claims
+- # of Claim Lines
+- # of Members (Overall)
+- Total Spend Capture
+
+** DONE Episodes/Claims Schemas
+   CLOSED: [2018-03-06 Tue 09:37]
+*** DONE Researching tabular data stores
+    CLOSED: [2018-02-27 Tue 17:08]
+*** DONE Writing the ETL
+    CLOSED: [2018-02-27 Tue 17:07]
+    CLOCK: [2018-02-26 Mon 08:07]--[2018-02-26 Mon 09:07] =>  1:00
+    CLOCK: [2018-02-25 Sun 17:13]--[2018-02-25 Sun 17:45] =>  0:32
+    CLOCK: [2018-02-25 Sun 14:23]--[2018-02-25 Sun 14:55] =>  0:32
+    + QAing the table creating functions
+
+    + Update all the table creating functions
+    CLOCK: [2018-02-24 Sat 15:53]--[2018-02-24 Sat 22:21] =>  6:28
+    CLOCK: [2018-02-24 Sat 14:19]--[2018-02-24 Sat 15:39] =>  1:20
+*** DONE Optimizing the ETL
+    CLOSED: [2018-02-27 Tue 17:07]
+    CLOCK: [2018-02-25 Sun 14:58]--[2018-02-25 Sun 17:02] =>  2:04
+    + Optimize ETL so it's mega-fast
+    + Research on Boto versus s3fs
+*** DONE Writing the Schema Documentation
+    CLOSED: [2018-02-27 Tue 17:08]
+    CLOCK: [2018-02-25 Sun 17:45]--[2018-02-26 Mon 00:07] =>  6:22
+*** TODO [#B] Testing it against the schema validators
+    CLOCK: [2018-02-27 Tue 13:02]--[2018-02-27 Tue 15:02] =>  2:00
+
+
+*** TODO QA Output
+*** TODO Spend Capture % Script
+** NOW Post-Bundling
+*** DONE Attributions
+    CLOSED: [2018-03-06 Tue 09:15]
+    CLOCK: [2018-03-05 Mon 09:15]--[2018-03-05 Mon 12:15] =>  3:00
+    CLOCK: [2018-03-03 Sat 09:14]--[2018-03-03 Sat 14:14] =>  5:00
+    CLOCK: [2018-03-04 Sun 09:14]--[2018-03-04 Sun 12:14] =>  3:00
+*** NEXT Post-Processing Script
+    CLOCK: [2018-03-05 Mon 22:30]--[2018-03-06 Tue 04:16] =>  5:46
