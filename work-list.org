@@ -1,4 +1,37 @@
 #+SEQ_TODO: NOW(N) NEXT(n) TODO(t) WAITING(w) SOMEDAY(s) ONGOING(o) | DONE(d) CANCELLED(c)
+#+BEGIN: clocktable :maxlevel 2 :scope file
+#+CAPTION: Clock summary at [2018-03-07 Wed 17:45]
+| Headline                                     | Time       |          |
+|----------------------------------------------+------------+----------|
+| *Total time*                                 | *8d 21:38* |          |
+|----------------------------------------------+------------+----------|
+| Extra                                        | 3:52       |          |
+| \emsp DONE Figuring out how to work my...    |            |     0:07 |
+| \emsp DONE Instructions for Sam/ Mina        |            |     0:07 |
+| \emsp DONE Header Line                       |            |     2:27 |
+| \emsp TODO Email Lesli                       |            |     1:11 |
+| ONGOING Java Engine                          | 2:11       |          |
+| \emsp ONGOING Presentations                  |            |     1:01 |
+| \emsp SOMEDAY Learning                       |            |     1:10 |
+| ONGOING Tech Team Things                     | 0:24       |          |
+| \emsp DONE Add ticket for Farm Env Updates   |            |     0:24 |
+| NEXT Prometheus                              | 2d 1:07    |          |
+| \emsp Spinal Fusion                          |            |  1d 4:14 |
+| \emsp Additional Prometheus Rules & Cleaning |            |     5:21 |
+| \emsp Technical                              |            |     7:44 |
+| \emsp Bug Fixes Feb 15-20                    |            |     7:48 |
+| SOMEDAY Metrics Engine                       | 3d 5:42    |          |
+| \emsp Teaching                               |            |     2:13 |
+| \emsp Looking up things                      |            | 1d 23:26 |
+| \emsp Schema Validation                      |            |  1d 1:28 |
+| \emsp Integrate Multiprocessing              |            |     2:35 |
+| NOW Truven                                   | 3d 8:22    |          |
+| \emsp DONE Internal Pre-Bundling             |            | 1d 13:17 |
+| \emsp DONE External Requests                 |            |     1:53 |
+| \emsp DONE Episodes/Claims Schemas           |            |    20:18 |
+| \emsp NOW Post-Bundling                      |            |    20:47 |
+| \emsp NOW Spend Capture Script               |            |     0:07 |
+#+END:
 
 * Extra
 ** DONE Figuring out how to work my computer
@@ -180,9 +213,11 @@ def use_copies(func):
 
 ***
 ** Integrate Multiprocessing
-*** TODO Add in Parquet files for Integrate Multiprocessing
+*** DONE Add in Parquet files for Integrate Multiprocessing
+    CLOSED: [2018-03-06 Tue 15:16]
    CLOCK: [2018-02-03 Sat 19:06]--[2018-02-03 Sat 19:53] =>  0:47
-*** TODO Work on the base functions and integrating them for dataframes
+*** DONE Work on the base functions and integrating them for dataframes
+    CLOSED: [2018-03-06 Tue 15:16]
    CLOCK: [2018-01-28 Sun 16:47]--[2018-01-28 Sun 17:06] =>  0:19
    CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 14:15] =>  0:01
 *** TODO Persist Data
@@ -193,6 +228,9 @@ def use_copies(func):
 *** TODO Add a Unique Check
 *** TODO Add Additional Spend Metrics for COB & Capitation Amount
 
+*** DONE CodeType Update Function
+    CLOSED: [2018-03-07 Wed 16:45]
+    CLOCK: [2018-03-06 Tue 15:17]--[2018-03-06 Tue 16:45] =>  1:28
 * NOW Truven
 ** DONE Internal Pre-Bundling
    CLOSED: [2018-03-06 Tue 09:52]
@@ -282,5 +320,9 @@ def use_copies(func):
     CLOCK: [2018-03-05 Mon 09:15]--[2018-03-05 Mon 12:15] =>  3:00
     CLOCK: [2018-03-03 Sat 09:14]--[2018-03-03 Sat 14:14] =>  5:00
     CLOCK: [2018-03-04 Sun 09:14]--[2018-03-04 Sun 12:14] =>  3:00
-*** NEXT Post-Processing Script
+*** TODO Post-Processing Script
+    CLOCK: [2018-03-06 Tue 12:00]--[2018-03-06 Tue 14:55] =>  2:55
+    CLOCK: [2018-03-06 Tue 10:33]--[2018-03-06 Tue 11:39] =>  1:06
     CLOCK: [2018-03-05 Mon 22:30]--[2018-03-06 Tue 04:16] =>  5:46
+** NOW Spend Capture Script
+   CLOCK: [2018-03-07 Wed 16:45]--[2018-03-07 Wed 16:52] =>  0:07
