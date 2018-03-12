@@ -1,17 +1,15 @@
 #+SEQ_TODO: NOW(N) NEXT(n) TODO(t) WAITING(w) SOMEDAY(s) ONGOING(o) | DONE(d) CANCELLED(c)
 #+BEGIN: clocktable :maxlevel 2 :scope file
-#+CAPTION: Clock summary at [2018-03-07 Wed 17:45]
+#+CAPTION: Clock summary at [2018-03-10 Sat 17:20]
 | Headline                                     | Time       |          |
 |----------------------------------------------+------------+----------|
-| *Total time*                                 | *8d 21:38* |          |
+| *Total time*                                 | *11d 4:31* |          |
 |----------------------------------------------+------------+----------|
-| Extra                                        | 3:52       |          |
+| ONGOING Extra                                | 7:19       |          |
 | \emsp DONE Figuring out how to work my...    |            |     0:07 |
-| \emsp DONE Instructions for Sam/ Mina        |            |     0:07 |
-| \emsp DONE Header Line                       |            |     2:27 |
-| \emsp TODO Email Lesli                       |            |     1:11 |
-| ONGOING Java Engine                          | 2:11       |          |
-| \emsp ONGOING Presentations                  |            |     1:01 |
+| \emsp ONGOING Responding to Lesli's Emails   |            |     1:11 |
+| \emsp ONGOING Presentations                  |            |     6:01 |
+| ONGOING Java Engine                          | 1:10       |          |
 | \emsp SOMEDAY Learning                       |            |     1:10 |
 | ONGOING Tech Team Things                     | 0:24       |          |
 | \emsp DONE Add ticket for Farm Env Updates   |            |     0:24 |
@@ -25,45 +23,43 @@
 | \emsp Looking up things                      |            | 1d 23:26 |
 | \emsp Schema Validation                      |            |  1d 1:28 |
 | \emsp Integrate Multiprocessing              |            |     2:35 |
-| NOW Truven                                   | 3d 8:22    |          |
-| \emsp DONE Internal Pre-Bundling             |            | 1d 13:17 |
+| NOW Truven                                   | 5d 12:49   |          |
+| \emsp DONE Internal Pre-Bundling             |            | 1d 15:44 |
 | \emsp DONE External Requests                 |            |     1:53 |
 | \emsp DONE Episodes/Claims Schemas           |            |    20:18 |
-| \emsp NOW Post-Bundling                      |            |    20:47 |
+| \emsp DONE Post-Bundling                     |            | 2d 22:47 |
 | \emsp NOW Spend Capture Script               |            |     0:07 |
 #+END:
-
-* Extra
-** DONE Figuring out how to work my computer
-   CLOSED: [2018-02-07 Wed 17:02]
-   CLOCK: [2018-01-27 Sat 17:29]--[2018-01-27 Sat 17:29] =>  0:00
-   CLOCK: [2018-01-27 Sat 17:21]--[2018-01-27 Sat 17:28] =>  0:07
-** DONE Instructions for Sam/ Mina
-   CLOSED: [2018-02-07 Wed 17:02]
-   CLOCK: [2018-01-27 Sat 17:50]--[2018-01-27 Sat 17:57] =>  0:07
-
-** DONE Header Line
-   CLOSED: [2018-02-07 Wed 17:02]
-   CLOCK: [2018-02-01 Thu 18:10]--[2018-02-01 Thu 19:11] =>  1:01
-   CLOCK: [2018-02-01 Thu 15:58]--[2018-02-01 Thu 17:24] =>  1:26
-
-** TODO Email Lesli
-   CLOCK: [2018-02-18 Sun 21:30]--[2018-02-18 Sun 22:10] =>  0:40
-   CLOCK: [2018-02-18 Sun 00:00]--[2018-02-18 Sun 00:31] =>  0:31
-* ONGOING Java Engine
-** ONGOING Presentations
-*** DONE Load Testing Follow Up Presentation
-    CLOSED: [2018-03-06 Tue 09:34]
-   CLOCK: [2018-02-01 Thu 21:11]--[2018-02-01 Thu 22:12] =>  1:01
-
-*** TODO Pre-Bundling Presentation Tech Team
 
 ** SOMEDAY Learning
 *** SQS Amazon AWS
     CLOCK: [2018-02-17 Sat 21:51]--[2018-02-17 Sat 22:32] =>  0:41
     CLOCK: [2018-02-17 Sat 21:21]--[2018-02-17 Sat 21:50] =>  0:29
 
-* ONGOING Tech Team Things
+
+* ONGOING Extra
+** DONE Figuring out how to work my computer
+   CLOSED: [2018-02-07 Wed 17:02]
+   CLOCK: [2018-01-27 Sat 17:29]--[2018-01-27 Sat 17:29] =>  0:00
+   CLOCK: [2018-01-27 Sat 17:21]--[2018-01-27 Sat 17:28] =>  0:07
+** ONGOING Responding to Lesli's Emails
+   CLOCK: [2018-02-18 Sun 21:30]--[2018-02-18 Sun 22:10] =>  0:40
+   CLOCK: [2018-02-18 Sun 00:00]--[2018-02-18 Sun 00:31] =>  0:3
+** ONGOING Presentations
+*** DONE Load Testing Follow Up Presentation
+    CLOSED: [2018-03-06 Tue 09:34]
+   CLOCK: [2018-02-01 Thu 21:11]--[2018-02-01 Thu 22:12] =>  1:01
+
+*** DONE Claims to Episodes ETL Presentation Reporting
+    CLOSED: [2018-03-10 Sat 17:16]
+    CLOCK: [2018-03-09 Fri 17:16]--[2018-03-09 Fri 19:16] =>  2:00
+
+*** DONE JSON Presentation on Bundle Defintions
+    CLOSED: [2018-03-10 Sat 17:17]
+    CLOCK: [2018-03-08 Thu 17:17]--[2018-03-08 Thu 20:17] =>  3:00
+*** TODO Pre-Bundling Presentation Tech Team
+
+* ONGOING Payer Team Product Work
 ** DONE Add ticket for Farm Env Updates
    CLOSED: [2018-02-14 Wed 04:50]
    CLOCK: [2018-02-13 Tue 20:44]--[2018-02-13 Tue 21:00] =>  0:16
@@ -81,6 +77,101 @@ def use_copies(func):
         return func(*args, **kwargs)
     return wrapper
 ##
+* SOMEDAY Metrics Engine
+** P0 Objective
+*** DONE Teaching
+    CLOSED: [2018-03-10 Sat 17:23]
+**** DONE Helped Andrew with Get Metrics Explanation
+   CLOSED: [2018-01-27 Sat 17:18]
+   CLOCK: [2018-01-23 Tue 07:15]--[2018-01-23 Tue 9:15] =>  2:00
+**** DONE Pull down commits and read them
+   CLOSED: [2018-01-28 Sun 14:13]
+   CLOCK: [2018-01-28 Sun 14:00]--[2018-01-28 Sun 14:13] =>  0:13
+**** Looking up things
+   CLOCK: [2018-02-22 Thu 15:53]--[2018-02-24 Sat 15:19] => 47:26
+*** DONE Schema Validation
+    CLOSED: [2018-03-10 Sat 17:29]
+**** DONE Create a new feature branch for schema validation
+   CLOSED: [2018-01-31 Wed 13:11]
+   CLOCK: [2018-01-30 Tue 3:11]--[2018-01-30 Tue 4:11] =>  1:00
+   CLOCK: [2018-01-29 Mon 11:00]--[2018-01-29 Mon 12:00] =>  1:00
+
+- Struggle with magit and fixing the fact that i didn't have a local branch
+
+**** DONE Research and Learn about Parquet
+   CLOSED: [2018-02-03 Sat 19:53]
+   CLOCK: [2018-02-01 Thu 19:54]--[2018-02-01 Thu 21:54] =>  2:00
+   CLOCK: [2018-02-02 Fri 13:51]--[2018-02-02 Fri 14:00] =>  0:09
+   CLOCK: [2018-01-28 Sun 17:13]--[2018-01-28 Sun 17:14] =>  0:01
+- Trying to benchmark reading parquet versus reading messagepacks etc
+- Created a benchmarking ipython notebook
+- Creating test datasets
+   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 16:27] =>  2:13
+
+**** DONE Update the schema validation script
+    CLOSED: [2018-02-28 Wed 13:01]
+    CLOCK: [2018-02-27 Tue 20:26]--[2018-02-27 Tue 26:00] =>  5:34
+    CLOCK: [2018-02-27 Tue 17:09]--[2018-02-27 Tue 18:20] =>  1:11
+    + Logging
+    CLOCK: [2018-02-27 Tue 8:30]--[2018-02-27 Tue 10:00] =>  1:30
+    CLOCK: [2018-02-26 Mon 17:08]--[2018-02-26 Mon 20:08] =>  3:00
+    CLOCK: [2018-02-18 Sun 00:25]--[2018-02-18 Sun 01:34] =>  1:09
+    + Other Functions
+    CLOCK: [2018-02-17 Sat 22:36]--[2018-02-18 Sun 00:00] =>  1:24
+    CLOCK: [2018-02-17 Sat 20:19]--[2018-02-17 Sat 21:20] =>  1:01
+    + Functions
+   CLOCK: [2018-02-03 Sat 16:37]--[2018-02-03 Sat 19:06] =>  2:29
+   CLOCK: [2018-01-29 Mon 15:36]--[2018-01-29 Mon 16:29] =>  0:53
+   CLOCK: [2018-01-29 Mon 14:49]--[2018-01-29 Mon 15:08] =>  0:19
+   CLOCK: [2018-01-28 Sun 16:28]--[2018-01-28 Sun 16:47] =>  0:19
+
+**** DONE Make the schema configuration for files
+    CLOSED: [2018-02-28 Wed 13:01]
+    CLOCK: [2018-02-17 Sat 17:46]--[2018-02-17 Sat 18:02] =>  0:16
+
+***
+*** NOW Integrate Multiprocessing
+**** DONE Add in Parquet files for Integrate Multiprocessing
+    CLOSED: [2018-03-06 Tue 15:16]
+   CLOCK: [2018-02-03 Sat 19:06]--[2018-02-03 Sat 19:53] =>  0:47
+**** DONE Work on the base functions and integrating them for dataframes
+    CLOSED: [2018-03-06 Tue 15:16]
+   CLOCK: [2018-01-28 Sun 16:47]--[2018-01-28 Sun 17:06] =>  0:19
+   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 14:15] =>  0:01
+**** DONE QA Metrics Engine Script
+     CLOSED: [2018-03-10 Sat 17:29]
+     CLOCK: [2018-03-07 Wed 17:25]--[2018-03-07 Wed 20:25] =>  3:00
+- Understanding what the issues were with the metrics being so low
+- Creating summary reports for us to look over together
+- Debugging my own shitty code
+***** DONE Create CodeType Function
+    CLOSED: [2018-03-07 Wed 16:45]
+    CLOCK: [2018-03-06 Tue 15:17]--[2018-03-06 Tue 16:45] =>  1:28
+
+***** DONE Fix Bugs in CodeType Function
+      CLOSED: [2018-03-10 Sat 17:32]
+      CLOCK: [2018-03-07 Wed 17:32]--[2018-03-07 Wed 18:32] =>  1:00
+*** NOW Get Metrics Engine to Accept Post-Processed Epis & Incl Claims
+*** NOW Metrics Dates Bug
+:BUG:
+*** TODO Persist Data
+
+
+
+
+** P1 Objective
+*** Schema Validation
+**** TODO Add a Code Check (or determine whether it can be grouped into categorical)
+**** TODO Add a Geographic Check
+**** TODO Figure out how to return something when there's an error so we can break script.
+**** TODO Add a Unique Check
+
+**** TODO Add Additional Spend Metrics for COB & Capitation Amount
+
+*** Metrics Logic
+**** Remove Currying Where Possible
+**** Determine Definition Schema Updates
+
 * NEXT Prometheus
 ** Spinal Fusion
 *** DONE Added Lumbar Spine Fusion Definition
@@ -162,75 +253,10 @@ def use_copies(func):
     CLOSED: [2018-02-24 Sat 14:53]
 
 ** NEXT Update To Latest Version V.4.005
-* SOMEDAY Metrics Engine
-** Teaching
-*** DONE Helped Andrew with Get Metrics Explanation
-   CLOSED: [2018-01-27 Sat 17:18]
-   CLOCK: [2018-01-23 Tue 07:15]--[2018-01-23 Tue 9:15] =>  2:00
-*** DONE Pull down commits and read them
-   CLOSED: [2018-01-28 Sun 14:13]
-   CLOCK: [2018-01-28 Sun 14:00]--[2018-01-28 Sun 14:13] =>  0:13
-** Looking up things
-   CLOCK: [2018-02-22 Thu 15:53]--[2018-02-24 Sat 15:19] => 47:26
-** Schema Validation
-*** DONE Create a new feature branch for schema validation
-   CLOSED: [2018-01-31 Wed 13:11]
-   CLOCK: [2018-01-30 Tue 3:11]--[2018-01-30 Tue 4:11] =>  1:00
-   CLOCK: [2018-01-29 Mon 11:00]--[2018-01-29 Mon 12:00] =>  1:00
+** NEXT Colon Resection Research
+   CLOCK: [2018-03-12 Mon 12:50]--[2018-03-12 Mon 13:20] =>  0:30
+** NEXT Lumbar Spinal Fusion Research
 
-- Struggle with magit and fixing the fact that i didn't have a local branch
-
-*** DONE Research and Learn about Parquet
-   CLOSED: [2018-02-03 Sat 19:53]
-   CLOCK: [2018-02-01 Thu 19:54]--[2018-02-01 Thu 21:54] =>  2:00
-   CLOCK: [2018-02-02 Fri 13:51]--[2018-02-02 Fri 14:00] =>  0:09
-   CLOCK: [2018-01-28 Sun 17:13]--[2018-01-28 Sun 17:14] =>  0:01
-- Trying to benchmark reading parquet versus reading messagepacks etc
-- Created a benchmarking ipython notebook
-- Creating test datasets
-   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 16:27] =>  2:13
-
-*** DONE Update the schema validation script
-    CLOSED: [2018-02-28 Wed 13:01]
-    CLOCK: [2018-02-27 Tue 20:26]--[2018-02-27 Tue 26:00] =>  5:34
-    CLOCK: [2018-02-27 Tue 17:09]--[2018-02-27 Tue 18:20] =>  1:11
-    + Logging
-    CLOCK: [2018-02-27 Tue 8:30]--[2018-02-27 Tue 10:00] =>  1:30
-    CLOCK: [2018-02-26 Mon 17:08]--[2018-02-26 Mon 20:08] =>  3:00
-    CLOCK: [2018-02-18 Sun 00:25]--[2018-02-18 Sun 01:34] =>  1:09
-    + Other Functions
-    CLOCK: [2018-02-17 Sat 22:36]--[2018-02-18 Sun 00:00] =>  1:24
-    CLOCK: [2018-02-17 Sat 20:19]--[2018-02-17 Sat 21:20] =>  1:01
-    + Functions
-   CLOCK: [2018-02-03 Sat 16:37]--[2018-02-03 Sat 19:06] =>  2:29
-   CLOCK: [2018-01-29 Mon 15:36]--[2018-01-29 Mon 16:29] =>  0:53
-   CLOCK: [2018-01-29 Mon 14:49]--[2018-01-29 Mon 15:08] =>  0:19
-   CLOCK: [2018-01-28 Sun 16:28]--[2018-01-28 Sun 16:47] =>  0:19
-
-*** DONE Make the schema configuration for Episodes
-    CLOSED: [2018-02-28 Wed 13:01]
-    CLOCK: [2018-02-17 Sat 17:46]--[2018-02-17 Sat 18:02] =>  0:16
-
-***
-** Integrate Multiprocessing
-*** DONE Add in Parquet files for Integrate Multiprocessing
-    CLOSED: [2018-03-06 Tue 15:16]
-   CLOCK: [2018-02-03 Sat 19:06]--[2018-02-03 Sat 19:53] =>  0:47
-*** DONE Work on the base functions and integrating them for dataframes
-    CLOSED: [2018-03-06 Tue 15:16]
-   CLOCK: [2018-01-28 Sun 16:47]--[2018-01-28 Sun 17:06] =>  0:19
-   CLOCK: [2018-01-28 Sun 14:14]--[2018-01-28 Sun 14:15] =>  0:01
-*** TODO Persist Data
-
-*** TODO Add a Code Check (or determine whether it can be grouped into categorical)
-*** TODO Add a Geographic Check
-*** TODO Figure out how to return something when there's an error so we can break script.
-*** TODO Add a Unique Check
-*** TODO Add Additional Spend Metrics for COB & Capitation Amount
-
-*** DONE CodeType Update Function
-    CLOSED: [2018-03-07 Wed 16:45]
-    CLOCK: [2018-03-06 Tue 15:17]--[2018-03-06 Tue 16:45] =>  1:28
 * NOW Truven
 ** DONE Internal Pre-Bundling
    CLOSED: [2018-03-06 Tue 09:52]
@@ -244,6 +270,11 @@ def use_copies(func):
    CLOCK: [2018-02-08 Thu 00:38]--[2018-02-08 Thu 02:38] =>  2:00
    CLOCK: [2018-01-30 Tue 13:11]--[2018-01-30 Tue 15:33] =>  2:22
    CLOCK: [2018-01-30 Tue 12:54]--[2018-01-30 Tue 13:00] =>  0:06
+**** DONE Header Line
+   CLOSED: [2018-02-07 Wed 17:02]
+   CLOCK: [2018-02-01 Thu 18:10]--[2018-02-01 Thu 19:11] =>  1:01
+   CLOCK: [2018-02-01 Thu 15:58]--[2018-02-01 Thu 17:24] =>  1:26
+
 *** DONE Transform Updates
     CLOSED: [2018-02-24 Sat 14:16]
    + Need to check that the farm works
@@ -314,13 +345,15 @@ def use_copies(func):
 
 *** TODO QA Output
 *** TODO Spend Capture % Script
-** NOW Post-Bundling
+** DONE Post-Bundling
+   CLOSED: [2018-03-10 Sat 17:11]
 *** DONE Attributions
     CLOSED: [2018-03-06 Tue 09:15]
     CLOCK: [2018-03-05 Mon 09:15]--[2018-03-05 Mon 12:15] =>  3:00
     CLOCK: [2018-03-03 Sat 09:14]--[2018-03-03 Sat 14:14] =>  5:00
     CLOCK: [2018-03-04 Sun 09:14]--[2018-03-04 Sun 12:14] =>  3:00
 *** TODO Post-Processing Script
+    CLOCK: [2018-03-07 Wed 17:54]--[2018-03-09 Fri 19:54] => 50:00
     CLOCK: [2018-03-06 Tue 12:00]--[2018-03-06 Tue 14:55] =>  2:55
     CLOCK: [2018-03-06 Tue 10:33]--[2018-03-06 Tue 11:39] =>  1:06
     CLOCK: [2018-03-05 Mon 22:30]--[2018-03-06 Tue 04:16] =>  5:46
