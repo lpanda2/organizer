@@ -4,8 +4,10 @@
 (setq mc/cmds-to-run-for-all
       '(
         helm-M-x
+        undo-tree-visualize
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        yaml-electric-backspace
         ))

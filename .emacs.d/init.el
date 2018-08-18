@@ -135,7 +135,9 @@ by Prelude.")
  ;; greet the use with some useful tip
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
-(split-window-vertically)
-(find-file "/data/lpanda/organizer/work-list.org")
+(find-file-other-window "/data/lpanda/organizer/work-list.org")
+;; (split-window-horizontally)
+(desktop-read)
+(desktop-save-mode 1)
 
 ;;; init.el ends here

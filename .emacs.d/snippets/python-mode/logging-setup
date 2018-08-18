@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: logging-setup
+# key: logging
+# --
+
+import logging
+import utilities as util
+
+util.custom_setup_logging(level=logging.ERROR)
+LOG = logging.getLogger()
