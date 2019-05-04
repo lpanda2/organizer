@@ -1,0 +1,17 @@
+#+TITLE: doing
+#+STARTUP: overview
+#+TODO: TODO LATER | DONE
+
+* DONE updating my emacs configurations
+  CLOSED: [2019-05-04 Sat 11:51]
+  :LOGBOOK:
+  CLOCK: [2019-05-04 Sat 11:50]--[2019-05-04 Sat 11:51] =>  0:01
+  CLOCK: [2019-05-04 Sat 11:40]--[2019-05-04 Sat 11:50] =>  0:10
+  :END:
+  <2019-05-04 Sat 11:38>
+* TODO going to start the udemy graph course
+  :LOGBOOK:
+  CLOCK: [2019-05-04 Sat 11:51]
+  CLOCK: [2019-05-04 Sat 11:39]--[2019-05-04 Sat 11:40] =>  0:01
+  :END:
+  <2019-05-04 Sat 11:34>
