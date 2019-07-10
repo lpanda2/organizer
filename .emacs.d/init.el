@@ -32,7 +32,12 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
-;(package-initialize)
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+                                        ;(package-initialize)
 
 (defvar current-user
   (getenv
@@ -71,13 +76,13 @@ by Prelude.")
   (make-directory prelude-savefile-dir))
 
 (defun prelude-add-subfolders-to-load-path (parent-dir)
- "Add all level PARENT-DIR subdirs to the `load-path'."
- (dolist (f (directory-files parent-dir))
-   (let ((name (expand-file-name f parent-dir)))
-     (when (and (file-directory-p name)
-                (not (string-prefix-p "." f)))
-       (add-to-list 'load-path name)
-       (prelude-add-subfolders-to-load-path name)))))
+  "Add all level PARENT-DIR subdirs to the `load-path'."
+  (dolist (f (directory-files parent-dir))
+    (let ((name (expand-file-name f parent-dir)))
+      (when (and (file-directory-p name)
+                 (not (string-prefix-p "." f)))
+        (add-to-list 'load-path name)
+        (prelude-add-subfolders-to-load-path name)))))
 
 ;; add Prelude's directories to Emacs's `load-path'
 (add-to-list 'load-path prelude-core-dir)
@@ -118,26 +123,30 @@ by Prelude.")
 (if (file-exists-p prelude-modules-file)
     (load prelude-modules-file)
   (message "Missing modules file %s" prelude-modules-file)
-  (message "You can get started by copying the bundled example file"))
+  (message "You can get started by copying the bundled example file from sample/prelude-modules.el"))
 
-;; config changes made through the customize UI will be store here
+;; config changes made through the customize UI will be stored here
 (setq custom-file (expand-file-name "custom.el" prelude-personal-dir))
-
 
 ;; load the personal settings (this includes `custom-file')
 (when (file-exists-p prelude-personal-dir)
   (message "Loading personal configuration files in %s..." prelude-personal-dir)
   (mapc 'load (directory-files prelude-personal-dir 't "^[^#\.].*el$")))
 
+
+;; load custom theme
+(load-theme 'challenger-deep)
+
 (message "Prelude is ready to do thy bidding, Master %s!" current-user)
+
+;; Patch security vulnerability in Emacs versions older than 25.3
+(when (version< emacs-version "25.3")
+  (eval-after-load "enriched"
+    '(defun enriched-decode-display-prop (start end &optional param)
+       (list start end))))
 
 (prelude-eval-after-init
  ;; greet the use with some useful tip
  (run-at-time 5 nil 'prelude-tip-of-the-day))
-
-(find-file-other-window "/data/lpanda/organizer/work-list.org")
-;; (split-window-horizontally)
-(desktop-read)
-(desktop-save-mode 1)
 
 ;;; init.el ends here
