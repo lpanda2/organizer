@@ -37,14 +37,7 @@
 
 To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar
 
-This event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOgEx69k3QWLk39tKG_6DGeT_vSc7s7yj4
-* Your booking with Data Technical Interview
-  :PROPERTIES:
-  :LINK: [[https://www.google.com/calendar/event?eid=MzAya3B2amEzMnRyN2M1aWx2MXNiYmkxNHEgbHBhbmRhMjAxNEBt][Go to gcal web page]]
-  :ID: 302kpvja32tr7c5ilv1sbbi14q
-  :END:
 
-  <2019-04-24 Wed 13:00-13:30>
 * Personal Call
   :PROPERTIES:
   :LINK: [[https://www.google.com/calendar/event?eid=YWQ0OGptNWQ4YWNqNGQxOWM3N2pvaHVyaWMgbHBhbmRhMjAxNEBt][Go to gcal web page]]
@@ -129,59 +122,6 @@ This event was created from an email you received in Gmail. https://mail.google.
   :END:
 
   <2019-05-06 Mon 21:30-23:30>
-* Lipsa Panda : Droit Interview
-  :PROPERTIES:
-  :LOCATION: Droit, 145 West 28th Street, 12th Floor, New York, NY 10001
-  :LINK: [[https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4OG8zY2gyNjhncWphZTlqNjBvazhkOWc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnOGdvamVlMWo4cDEzNGhoZzg5MzM4aDlrNnNzajZncG82Y3JqZ2NocDg4czNlZWEzNmQyMCBscGFuZGEyMDE0QG0][Go to gcal web page]]
-  :ID: _60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g88o3ch268gqjae9j60ok8d9g64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g8gojee1j8p134hhg89338h9k6ssj6gpo6crjgchp88s3eea36d20
-  :END:
-
-  <2019-05-07 Tue 12:00-14:00>
-
-Hi Lipsa
-
-Your interview with Droit is confirmed as follows:
-
-Date:
-
-Tuesday 7 May
-
-
-Time:
-
-12.00 – 2.00pm
-
-
-Schedule:
-
-12:00 - 1:00 PM: Technical interview (Eric Loren)
-
-1:00 - 2:00 PM: Pair programming in Clojure (Carl Factora)
-
-
-Location:
-
-Droit, 145 West 28th Street, 12th Floor, New York, NY 10001
-
-
-
-Kindest Regards
-
-Lauren
-
-
-Lauren Fonseca
-Operations Manager
--
-+44 (0)203 302 5251
-+44 (0)7808 793170
--
-www.thedifferenceengine.tech<http://www.thedifferenceengine.tech/>
-
-[TDE Email footer v1]
-
-Please take a moment to read our Privacy Notice<https://www.thedifferenceengine.tech/legal_documents/privacy_policy>
-
 
 
 
